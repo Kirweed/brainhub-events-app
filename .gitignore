@@ -4,6 +4,7 @@
 
 backend/node_modules
 .env
+dist
 
 # dependencies
 /node_modules
