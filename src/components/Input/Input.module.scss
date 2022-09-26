@@ -1,6 +1,10 @@
+.wrapper {
+    width: 70%;
+}
+
 .inputWrapper {
     position: relative;
-    width: 70%;
+    width: 100%;
     height: var(--spacer-40);
 }
 
@@ -23,4 +27,8 @@
 
 .dateInput {
     width: 16rem;
+}
+
+.error {
+    color: #cc0000;
 }

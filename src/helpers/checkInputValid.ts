@@ -1,4 +1,5 @@
-import { validateEmail } from "utils/validateEmail";
+import { isEmailValid } from "utils/isEmailValid";
+import { isTextInputValid } from "utils/isTextInputValid";
 
 export const checkInputValid = (
   type?: string,
@@ -7,9 +8,9 @@ export const checkInputValid = (
   const stringifyValue = String(value);
   if (!type || !value) return false;
   if (type === "text") {
-    return stringifyValue.length >= 3 && stringifyValue.length < 30;
+    return isTextInputValid(stringifyValue);
   } else if (type === "email") {
-    return validateEmail(stringifyValue);
+    return isEmailValid(stringifyValue);
   } else {
     return false;
   }

@@ -1,6 +1,7 @@
 .formWrapper {
     width: 40vw;
-    height: 40rem;
+    min-height: 40rem;
+    padding: var(--spacer-20);
     background-color: var(--color-secondary);
     margin: 10% auto 0 auto;
     display: flex;
