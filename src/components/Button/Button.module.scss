@@ -6,4 +6,9 @@
     background-color: var(--color-primary);
     border-radius: var(--spacer-5);
     font-weight: 700;
+    font-size: var(--font-18);
+
+    &:hover {
+        cursor: pointer;
+    }
 }
